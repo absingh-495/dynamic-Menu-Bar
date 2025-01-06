@@ -148,7 +148,7 @@ body{
   display: block;
 }
 
- .sidebar-nav .nav-item:hover .nav-tooltip {
+.sidebar-nav .nav-item:hover .nav-tooltip {
   opacity: 1;
   pointer-events: auto;
   transform: translateY(50%);
@@ -156,8 +156,50 @@ body{
 
  }
 
- .sidebar-nav .secondary-nav{
+.sidebar-nav .secondary-nav{
   position: absolute;
   bottom: 30px;
   width: 100%;
  }
+
+ 
+
+ /* respnsive */
+
+@media (max-width: 1024px){
+.sidebar{
+  margin: 10px;
+  width: calc(100% - 28px);
+  }
+
+.sidebar-header{
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: #151A2D;
+  padding: 8px 10px;
+  border-radius: 16px;
+}
+
+.sidebar-header .header-logo img{
+  width: 40px;
+  height: 40px;
+}
+
+.sidebar-nav .nav-list{
+  width: 40px;
+  height: 40px;
+  /* background: red; */
+}
+  
+.sidebar-nav .nav-link{
+  gap: 10px;
+  padding: 10px;
+  font-size: 0.95rem;
+}
+
+.sidebar-nav .nav-link .nav-icon{
+  font-size: 1.37rem;
+}
+
+}
